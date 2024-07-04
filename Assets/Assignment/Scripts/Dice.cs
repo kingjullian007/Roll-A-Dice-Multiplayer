@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Dice : MonoBehaviour
 {
-    [SerializeField] private Sprite[] diceSides;  // Ensure to assign these in the Inspector
+    [SerializeField] private Sprite[] diceSides;
     private SpriteRenderer rend;
     private bool coroutineAllowed = true;
     private int finalSide;
