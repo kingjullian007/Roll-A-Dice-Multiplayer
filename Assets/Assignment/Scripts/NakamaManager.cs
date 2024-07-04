@@ -41,4 +41,9 @@ public class NakamaManager : MonoBehaviour
     public IClient GetClient () => client;
     public ISocket GetSocket () => socket;
     public ISession GetSession () => session;
+
+    private void OnApplicationQuit ()
+    {
+        socket?.CloseAsync();
+    }
 }
